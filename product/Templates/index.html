@@ -1,0 +1,23 @@
+{% extends 'theme.html' %}
+{% block content %}
+<h1><center>Nike Football</center></h1>
+<div class="container">
+    <div class="row">
+
+
+        {% for X in X %}
+        <div class="col-md-3">
+<div class="card" style="width: 18rem;">
+  <img src="{{X.Image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{X.Name}}</h5>
+    <p class="card-text">{{X.Price}}</p>
+      <p class="card-text">{{X.Stock}}</p>
+    <a href="https://www.nike.com/in/" class="btn btn-primary">View more>></a>
+  </div>
+</div>
+  </div>
+    {% endfor %}
+        </div>
+        </div>
+{% endblock %}
